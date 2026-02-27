@@ -1,0 +1,258 @@
+/* Tailwind v4 entry */
+@import "tailwindcss";
+
+
+/* Base rem normalization */
+html {
+  font-size: 16px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* =========================
+   APP THEME (DEFAULT APP)
+   ========================= */
+:root {
+  /* Your app colors */
+  --msblue: rgb(1, 5, 121);
+  --msaccent: rgb(99, 104, 218);
+  --white: rgb(255, 255, 255);
+  --lilac: rgb(233, 234, 255);
+  --lilac-hover: rgb(211, 213, 255);
+  --dark-blue: rgb(0, 3, 76);
+  --bg-heading: rgba(169, 169, 169, 0.15);
+  --warning: rgb(135, 5, 113);
+
+  --radius: 0.625rem;
+}
+
+/* =========================
+   Tailwind Theme Tokens
+   ========================= */
+@theme {
+  /* App */
+  --color-msblue: var(--msblue);
+  --color-msaccent: var(--msaccent);
+  --color-lilac: var(--lilac);
+  --color-lilac-hover: var(--lilac-hover);
+  --color-dark-blue: var(--dark-blue);
+  --color-warning: var(--warning);
+
+  --font-inter: var(--font-inter), sans-serif;
+  --font-ptsans: var(--font-ptsans), serif;
+
+  /* Breakpoints */
+  --breakpoint-xs: 400px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* =========================
+   Base Styles (your app)
+   ========================= */
+body {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1,
+h3 {
+  font-family: var(--font-ptsans), serif;
+}
+
+h2 {
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Hide scrollbar but keep scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================
+   PHONE INPUT (react-phone-number-input)
+   Make flag dropdown obvious + readable
+   ========================= */
+
+.ms-phone .PhoneInput {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Flag dropdown button */
+.ms-phone .PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 3, 76, 0.25);
+  background: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Make it VERY obvious it's clickable */
+.ms-phone .PhoneInputCountry:hover {
+  background: rgba(233, 234, 255, 0.95);
+  border-color: rgba(0, 3, 76, 0.4);
+}
+
+/* The dropdown arrow */
+.ms-phone .PhoneInputCountrySelectArrow {
+  opacity: 0.85;
+  transform: scale(1.1);
+  color: black;
+  transform: rotate(45deg);
+}
+
+/* Flag itself */
+.ms-phone .PhoneInputCountryIcon {
+  width: 22px;
+  height: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Country dropdown <select> */
+.ms-phone .PhoneInputCountrySelect {
+  background: white !important;
+  color: rgb(0, 3, 76) !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding-right: 6px;
+}
+
+/* Dropdown options (this fixes invisible text) */
+.ms-phone .PhoneInputCountrySelect option {
+  background: white;
+  color: rgb(0, 3, 76);
+}
+
+/* Phone input alignment */
+.ms-phone .PhoneInputInput {
+  border: none !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: rgb(0, 3, 76) !important;
+  height: 42px;
+  padding: 0 12px !important;
+  border-radius: 6px !important;
+  outline: none !important;
+}
+
+/* When focused (nice UX) */
+.ms-phone .PhoneInputCountry:focus-within {
+  border-color: rgb(1, 5, 121);
+  box-shadow: 0 0 0 3px rgba(1, 5, 121, 0.15);
+}
+
+/* Placeholder color */
+.ms-phone .PhoneInputInput::placeholder {
+  color: rgba(0, 3, 76, 0.55) !important;
+}
+
+/* Optional: focus ring similar to your theme */
+.ms-phone .PhoneInputInput:focus {
+  box-shadow: 0 0 0 3px rgba(1, 5, 121, 0.15) !important;
+}
+
+/* =========================
+   GRADIENT UTILITIES
+   ========================= */
+@layer utilities {
+  /* ---------- Background Gradients ---------- */
+
+  .gradient-100 {
+    background-image: linear-gradient(90deg, #860471, #6368da);
+    transition: filter 0.2s ease, transform 0.15s ease;
+  }
+
+  .gradient-100:hover {
+    filter: brightness(1.12);
+  }
+
+  .gradient-200 {
+    background-image: linear-gradient(90deg, #041986, #6368da);
+    transition: filter 0.2s ease, transform 0.15s ease;
+  }
+
+  .gradient-200:hover {
+    filter: brightness(1.12);
+  }
+
+  /* ---------- Text Gradients ---------- */
+
+  .text-gradient-100 {
+    background-image: linear-gradient(90deg, #860471, #6368da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: filter 0.2s ease;
+  }
+
+  .text-gradient-100:hover {
+    filter: brightness(1.15);
+  }
+
+  .text-gradient-200 {
+    background-image: linear-gradient(90deg, #041986, #6368da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: filter 0.2s ease;
+  }
+
+  .text-gradient-200:hover {
+    filter: brightness(1.15);
+  }
+}
+
+/* =========================
+   MS CUSTOM SCROLLBAR
+========================= */
+
+.ms-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(173, 165, 222, 0.799) transparent;
+}
+
+/* WebKit browsers */
+.ms-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ms-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ms-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(147, 130, 255, 0.5);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.ms-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(147, 130, 255, 0.8);
+}
+
+.ms-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
