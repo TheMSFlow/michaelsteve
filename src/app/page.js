@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 export default function Page() {
   return (
@@ -10,9 +10,7 @@ export default function Page() {
             You can only give <i>clarity</i>, if you have <i>clarity</i>.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 text-[1.25rem] font-light gap-8">
-            <div>
-              {/* Something goes here */}
-            </div>
+            <div>{/* Something goes here */}</div>
             <p>
               Michael Steve is a clarity catalyst studio for strategic,
               executive, and institutional leaders.
@@ -23,7 +21,8 @@ export default function Page() {
             </p>
           </div>
         </section>
-
+        
+        {/* Mission */}
         <section></section>
       </main>
     </>

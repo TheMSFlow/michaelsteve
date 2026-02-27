@@ -3,7 +3,6 @@ import { inter, ptsans } from "@/fonts";
 import { LocationProvider } from "@/context/LocationContext";
 import { Toaster } from "sonner";
 
-
 export const metadata = {
   title: "Michael Steve",
   description: "Clarity Catalyst Studio for Leaders",
@@ -13,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body
         className={`${inter.variable} ${ptsans.variable} antialiased h-dvh overflow-hidden ms-scrollbar`}
       >
