@@ -15,7 +15,7 @@ export default function ClarityPrograms({ onClose }) {
 
       {/* Modal */}
       <div
-        className="relative z-10 w-full mx-4 sm:mx-6 md:mx-0 h-[95vh] 2xl:h-auto
+        className="relative z-10 w-full mx-4 sm:mx-6 md:mx-0 h-[95dvh] 2xl:h-auto
                 md:max-w-2xl
                 bg-white rounded-2xl shadow-2xl
                 flex flex-col
