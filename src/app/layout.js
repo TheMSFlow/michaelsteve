@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" />
       </head>
       <body
-        className={`${inter.variable} ${ptsans.variable} antialiased h-dvh overflow-hidden ms-scrollbar`}
+        className={`${inter.variable} ${ptsans.variable} antialiased min-h-dvh ms-scrollbar`}
       >
         <LocationProvider>
           {children}

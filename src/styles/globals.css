@@ -1,12 +1,10 @@
 /* Tailwind v4 entry */
 @import "tailwindcss";
 
-
 /* Base rem normalization */
 html {
   font-size: 16px;
   height: 100%;
-  overflow: hidden;
 }
 
 /* =========================
@@ -60,7 +58,6 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   height: 100%;
-  overflow: hidden;
 }
 
 h1,
@@ -181,7 +178,9 @@ h2 {
 
   .gradient-100 {
     background-image: linear-gradient(90deg, #860471, #6368da);
-    transition: filter 0.2s ease, transform 0.15s ease;
+    transition:
+      filter 0.2s ease,
+      transform 0.15s ease;
   }
 
   .gradient-100:hover {
@@ -190,7 +189,9 @@ h2 {
 
   .gradient-200 {
     background-image: linear-gradient(90deg, #041986, #6368da);
-    transition: filter 0.2s ease, transform 0.15s ease;
+    transition:
+      filter 0.2s ease,
+      transform 0.15s ease;
   }
 
   .gradient-200:hover {
@@ -255,4 +256,29 @@ h2 {
 
 .ms-scrollbar::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes ms-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(165, 147, 224, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(165, 147, 224, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(165, 147, 224, 0);
+  }
+}
+
+.ms-pulse {
+  animation: ms-pulse 5s infinite;
 }
