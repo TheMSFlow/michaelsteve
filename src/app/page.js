@@ -12,7 +12,7 @@ export default function Page() {
       <main className="flex flex-col items-center justify-center">
         {/* Hero */}
         <section className="max-w-300 2xl:max-w-7xl min-h-dvh px-4 py-10 flex flex-col justify-center gap-16">
-          <h2 className="text-[3rem] md:text-[4rem] ">
+          <h2 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] ">
             You can only give <i>clarity</i>, if you have <i>clarity</i>.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 text-[1.25rem] font-light gap-8">
