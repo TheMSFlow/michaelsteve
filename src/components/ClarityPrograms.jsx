@@ -29,7 +29,7 @@ export default function ClarityPrograms({ onClose }) {
             <Button
               variant="reveal"
               onClick={onClose}
-              className="text-dark-blue/70 hover:text-dark-blue cursor-pointer w-fit absolute top-4 right-4"
+              className="text-dark-blue/70 hover:text-dark-blue cursor-pointer w-fit absolute lg:fixed top-4 right-4"
             >
               <X />
             </Button>
