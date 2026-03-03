@@ -34,7 +34,8 @@ export default function ClarityPrograms({ onClose }) {
               <X />
             </Button>
             <h3 className="text-dark-blue text-xl mt-8 md:mt-4">
-              We deliver Clarity in AI™ through three primary engagements.
+              We deliver Clarity in AI<sup className="text-xs">™</sup>{" "}
+              through three primary engagements.
             </h3>
 
             {/* -------- AICC -------- */}
