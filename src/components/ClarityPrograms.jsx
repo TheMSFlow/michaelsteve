@@ -58,7 +58,7 @@ export default function ClarityPrograms({ onClose }) {
               <Button
                 variant="primary"
                 className="w-fit gap-2"
-                href="https://aicc.michaelsteve.com"
+                href="https://aiclarityforchiefs.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
