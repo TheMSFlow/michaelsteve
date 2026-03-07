@@ -34,8 +34,8 @@ export default function ClarityPrograms({ onClose }) {
               <X />
             </Button>
             <h3 className="text-dark-blue text-xl mt-8 md:mt-4">
-              We deliver Clarity in AI<sup className="text-xs">™</sup>{" "}
-              through three primary engagements.
+              We deliver Clarity in AI<sup className="text-xs">™</sup> through
+              three primary engagements.
             </h3>
 
             {/* -------- AICC -------- */}
@@ -182,6 +182,17 @@ export default function ClarityPrograms({ onClose }) {
               </div>
             </div>
           </div>
+          <p className="text-md text-dark-blue/60 text-center">
+            For more Inquiries,{" "}
+            <a
+              href="https://intelligence.michaelsteve.com/form/inquiry?src=MS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline align-baseline underline text-gradient-200 hover:opacity-70 font-medium transition-colors"
+            >
+              send us a message
+            </a>
+          </p>
         </div>
       </div>
     </div>
