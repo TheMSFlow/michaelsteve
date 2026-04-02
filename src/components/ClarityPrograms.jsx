@@ -157,7 +157,7 @@ export default function ClarityPrograms({ onClose }) {
                   <Button
                     variant="primary-light"
                     className="w-fit gap-2"
-                    href="mailto:sales@michaelsteve.com?subject=The%20Awakening%20Speaking%20Engagement&body=I%20would%20like%20to%20host%20a%201-hour%20Awakening%20session%20for%20my%20organization%20or%20network.%0A%0AEstimated%20Audience%20Size:%0AOrganization%20/%20Group%20Name:%0AProposed%20Timeframe:%0A%0AAdditional%20Context:%0A"
+                    href="https://intelligence.michaelsteve.com/form/inquiry?src=PB"
                   >
                     Request Briefing
                   </Button>
