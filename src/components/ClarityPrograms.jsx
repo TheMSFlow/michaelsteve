@@ -39,7 +39,7 @@ export default function ClarityPrograms({ onClose }) {
             </h3>
 
             {/* -------- The Awakening -------- */}
-            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full mb-8">
+            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full">
               <div className="absolute inset-y-0 left-0 w-1 bg-msblue/40" />
               <div className="flex gap-2">
                 <BookLock className="w-6 h-6 text-msblue/40" />
@@ -155,7 +155,7 @@ export default function ClarityPrograms({ onClose }) {
             </div>
 
             {/* -------- AICC -------- */}
-            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full">
+            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full mb-8">
               <div className="absolute inset-y-0 left-0 w-1 bg-msaccent" />
               <div className="flex gap-2">
                 <Shield className="w-6 h-6 text-msaccent" />
