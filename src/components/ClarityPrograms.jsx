@@ -38,63 +38,6 @@ export default function ClarityPrograms({ onClose }) {
               three primary engagements.
             </h3>
 
-            {/* -------- AICC -------- */}
-            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full">
-              <div className="absolute inset-y-0 left-0 w-1 bg-msaccent" />
-              <div className="flex gap-2">
-                <Shield className="w-6 h-6 text-msaccent" />
-
-                <p className="text-lg font-medium text-dark-blue">
-                  AI Clarity for Chiefs
-                </p>
-              </div>
-
-              <p className="text-sm text-dark-blue/80 leading-relaxed">
-                A four-week, one-on-one executive engagement designed for
-                C-suite and senior leaders, focused on AI governance, risk
-                oversight, leadership alignment, and enterprise-grade strategy.
-              </p>
-
-              <Button
-                variant="primary"
-                className="w-fit gap-2"
-                href="https://aiclarityforchiefs.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                See Details
-              </Button>
-            </div>
-
-            {/* -------- AISC -------- */}
-            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full">
-              <div className="absolute inset-y-0 left-0 w-1 bg-warning/70" />
-              <div className="flex gap-2">
-                <Users className="w-6 h-6 text-warning/70" />
-
-                <p className="text-lg font-medium text-dark-blue">
-                  AI Stakeholder Challenge
-                </p>
-              </div>
-
-              <p className="text-sm text-dark-blue/80 leading-relaxed">
-                A three-day live community experience that challenges leaders to
-                move from passive AI consumer to responsible AI stakeholder
-                through structured sessions, decision-focused exercises, and
-                guided feedback.
-              </p>
-
-              <Button
-                variant="primary"
-                className="w-fit gap-2 bg-warning/20 hover:bg-warning/30 text-warning"
-                href="https://aistakeholderchallenge.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Explore Challenge
-              </Button>
-            </div>
-
             {/* -------- The Awakening -------- */}
             <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full mb-8">
               <div className="absolute inset-y-0 left-0 w-1 bg-msblue/40" />
@@ -114,8 +57,8 @@ export default function ClarityPrograms({ onClose }) {
               <div className="text-dark-blue text-xs flex flex-col gap-4 p-4 border border-msaccent/30">
                 <h3>Briefing 01</h3>
                 <p className="text-sm font-medium text-dark-blue">
-                  The Awakening: Recognizing AI Fluency as the
-                  Non-Negotiable Next Layer of Leadership
+                  The Awakening: Recognizing AI Fluency as the Non-Negotiable
+                  Next Layer of Leadership
                 </p>
                 <div className="flex flex-col md:flex-row gap-2 md:items-center justify-center">
                   <Image
@@ -180,6 +123,63 @@ export default function ClarityPrograms({ onClose }) {
                   </a>
                 </p>
               </div>
+            </div>
+
+            {/* -------- AISC -------- */}
+            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full">
+              <div className="absolute inset-y-0 left-0 w-1 bg-warning/70" />
+              <div className="flex gap-2">
+                <Users className="w-6 h-6 text-warning/70" />
+
+                <p className="text-lg font-medium text-dark-blue">
+                  AI Stakeholder Challenge
+                </p>
+              </div>
+
+              <p className="text-sm text-dark-blue/80 leading-relaxed">
+                A three-day live community experience that challenges leaders to
+                move from passive AI consumer to responsible AI stakeholder
+                through structured sessions, decision-focused exercises, and
+                guided feedback.
+              </p>
+
+              <Button
+                variant="primary"
+                className="w-fit gap-2 bg-warning/20 hover:bg-warning/30 text-warning"
+                href="https://aistakeholderchallenge.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Explore Challenge
+              </Button>
+            </div>
+
+            {/* -------- AICC -------- */}
+            <div className="relative rounded-xl border border-dark-blue/10 bg-white p-6 space-y-4 w-full">
+              <div className="absolute inset-y-0 left-0 w-1 bg-msaccent" />
+              <div className="flex gap-2">
+                <Shield className="w-6 h-6 text-msaccent" />
+
+                <p className="text-lg font-medium text-dark-blue">
+                  AI Clarity for Chiefs
+                </p>
+              </div>
+
+              <p className="text-sm text-dark-blue/80 leading-relaxed">
+                A four-week, one-on-one executive engagement designed for
+                C-suite and senior leaders, focused on AI governance, risk
+                oversight, leadership alignment, and enterprise-grade strategy.
+              </p>
+
+              <Button
+                variant="primary"
+                className="w-fit gap-2"
+                href="https://aiclarityforchiefs.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See Details
+              </Button>
             </div>
           </div>
           <p className="text-md text-dark-blue/60 text-center">
