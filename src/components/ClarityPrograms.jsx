@@ -112,7 +112,8 @@ export default function ClarityPrograms({ onClose }) {
                   <Handshake className=" w-4 h-4 text-white" />
                 </div>
                 <p className="text-xs text-dark-blue/60">
-                  Communities with the capacity to convene 100 or more leaders
+                  Communities with the capacity to convene 50+ 
+                  leaders
                   may host a private 30-minute <strong>Awakening</strong>{" "}
                   session at no cost.{" "}
                   <a
