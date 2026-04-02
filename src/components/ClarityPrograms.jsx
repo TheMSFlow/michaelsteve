@@ -114,7 +114,7 @@ export default function ClarityPrograms({ onClose }) {
               <div className="text-dark-blue text-xs flex flex-col gap-4 p-4 border border-msaccent/30">
                 <h3>Briefing 01</h3>
                 <p className="text-sm font-medium text-dark-blue">
-                  The Awakening: Recognizing AI Proficiency as the
+                  The Awakening: Recognizing AI Fluency as the
                   Non-Negotiable Next Layer of Leadership
                 </p>
                 <div className="flex flex-col md:flex-row gap-2 md:items-center justify-center">
