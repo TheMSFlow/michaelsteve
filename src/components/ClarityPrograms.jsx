@@ -112,12 +112,11 @@ export default function ClarityPrograms({ onClose }) {
                   <Handshake className=" w-4 h-4 text-white" />
                 </div>
                 <p className="text-xs text-dark-blue/60">
-                  Communities with the capacity to convene 50+ 
-                  leaders
-                  may host a private 30-minute <strong>Awakening</strong>{" "}
-                  session at no cost.{" "}
+                  Communities with the capacity to convene 50+ leaders may host
+                  a private 30-minute <strong>Awakening</strong> session at no
+                  cost.{" "}
                   <a
-                    href="mailto:partner@michaelsteve.com?subject=The%20Awakening%20Partnership&body=I%20would%20like%20to%20host%20a%2030-minute%20Awakening%20session%20for%20my%20community%20or%20network.%0A%0AEstimated%20Audience%20Size%20(Minimum 100):%0ACommunity%20/%20Group%20Name:%0AProposed%20Date:%0A%0AAdditional%20Context:%0A"
+                    href="https://intelligence.michaelsteve.com/community/sponsor"
                     className="inline align-baseline underline text-gradient-100 hover:opacity-70 font-medium transition-colors"
                   >
                     Partner with us
