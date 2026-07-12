@@ -12,11 +12,9 @@ export const metadata = {
   description:
     "Helping executives and leadership communities navigate the AI shift with clarity, strategic insight, and decisive action.",
 
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL),
-
-  alternates: {
-    canonical: "/",
-  },
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://michaelsteve.com"
+  ),
 
   openGraph: {
     title: "Michael Steve | AI Leadership & Clarity for Executives",
@@ -77,7 +75,6 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
         className={`${inter.variable} ${ptsans.variable} antialiased min-h-dvh ms-scrollbar`}

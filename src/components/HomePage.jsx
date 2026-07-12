@@ -92,7 +92,11 @@ export default function Page() {
 
         {/* <ClarityDelivery /> */}
 
-        {open && <ClarityPrograms onClose={() => setOpen(false)} />}
+        {/* Always rendered so the programme links are in the crawlable HTML;
+            visibility is toggled via the hidden attribute instead of mounting */}
+        <div hidden={!open}>
+          <ClarityPrograms onClose={() => setOpen(false)} />
+        </div>
       </main>
     </>
   );
