@@ -266,7 +266,7 @@ export default function QuickLinks() {
         {/* Footer */}
         <footer className="text-center pt-4">
           <p className="text-[10px] tracking-[0.2em] uppercase text-dark-blue/45 font-inter">
-            Michael Steve's Clarity Studio
+            Michael Steve Clarity Studio
           </p>
         </footer>
       </div>

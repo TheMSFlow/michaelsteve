@@ -137,9 +137,9 @@ export default function ClarityPrograms({ onClose }) {
               </div>
 
               <p className="text-sm text-dark-blue/80 leading-relaxed">
-                A three-day live community experience that challenges leaders to
+                A seven-day leadership program that challenges leaders to
                 move from passive AI consumer to responsible AI stakeholder
-                through structured sessions, decision-focused exercises, and
+                through live sessions, decision-focused exercises, and
                 guided feedback.
               </p>
 

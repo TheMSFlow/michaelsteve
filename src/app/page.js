@@ -66,7 +66,7 @@ const programsJsonLd = {
         "@type": "Service",
         name: "AI Stakeholder Challenge",
         description:
-          "A three-day live community experience that moves leaders from passive AI consumer to responsible AI stakeholder.",
+          "A seven-day leadership program that moves leaders from passive AI consumer to responsible AI stakeholder.",
         url: "https://aistakeholderchallenge.com",
         provider: { "@type": "Person", name: "Michael Steve" },
       },
