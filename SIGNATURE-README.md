@@ -15,10 +15,22 @@ not touched by Turbopack, Tailwind, PostCSS, or the App Router layout. Nothing i
 |---|---|
 | Identity | Logo 72x72, name, title, company |
 | Divider | 1px `#D5D7EA` rule |
-| Contact | `partner@michaelsteve.com`, `+234 916 019 9000`, `michaelsteve.com`, LinkedIn, Instagram |
-| Banner | 500x125, links to `aistakeholderchallenge.com` |
+| Contact | `partner@michaelsteve.com`, then `michaelsteve.com`, one per line |
+| Banner | 250x62, links to `aistakeholderchallenge.com` |
 
 Total width 500px. Every value is real, no placeholders.
+
+No phone number, by decision. At this level of correspondence email is the
+expected channel, and a direct line in a signature that travels with forwarded
+mail is exposure without much upside. If it is ever added back, it must be real
+HTML text with a `tel:` link, never inside an image.
+
+No social links either, held back until LinkedIn and Instagram carry content. A
+signature link to an empty profile is worse than no link. When they are ready,
+add them to the contact line as plain text links, `LinkedIn` and `Instagram`,
+separated by `&nbsp;&nbsp;&#183;&nbsp;&nbsp;`. Do not use icon images: they need
+a PNG per network, they vanish when a client blocks images, and they add HTTP
+requests for no gain over a word.
 
 ## No separate CTA button, by decision
 
@@ -53,9 +65,9 @@ banner below pointing at `aiclarityforchiefs.com`. Reasons it was dropped:
   `AI STAKEHOLDER CHALLENGE` and the link goes to aistakeholderchallenge.com.
 - **Same split the CTA button caused.** Two banners of equal visual weight means
   neither wins, which is the problem removing the button was meant to solve.
-- **Height.** Roughly 209px of content plus one 125px banner is already a lot to
-  append to a one-line reply, and it repeats down a thread. Two banners takes it
-  past 470px.
+- **Height.** A signature repeats down a whole thread, so every row is paid for
+  many times. The banner has since been cropped to 62px, which weakens this
+  particular argument, but the three above do not depend on it.
 - **Positioning.** `ecosystem/SOURCE_OF_TRUTH.md` frames AICC as the engagement
   for Chiefs and VIPs who cannot or will not do the intense seven-day challenge.
   AISC and AICC are alternatives, not a bundle. Showing both asks the recipient
@@ -72,7 +84,7 @@ Referenced by the signature, absolute HTTPS URLs:
 | File | Source | Rendered | Notes |
 |---|---|---|---|
 | `icon-192.png` | 193x193 PNG | 72x72 | Pre-existing, already live. 2.7x oversampled, sharp on retina |
-| `aisc-signature-banner.jpg` | 1000x250 JPEG, 21KB | 500x125 | 2x downscale. Solid gradient, dark mode safe |
+| `aisc-signature-banner.jpg` | 500x124 JPEG, 10KB | 250x62 | Exactly 2x. Solid gradient, dark mode safe |
 
 Present in `public/` but **not referenced**:
 
@@ -83,6 +95,30 @@ Present in `public/` but **not referenced**:
 
 Unreferenced files in `public/` are never fetched by a recipient, so they cost
 repo size only.
+
+### Banner sizing
+
+The banner renders at 250x62, half the original 500x125 in both dimensions, so
+the artwork keeps its proportions and framing exactly as designed. The 2x source
+is 500x124, produced by scaling the uncropped 1000x250 master:
+
+```js
+sharp('public/aisc-signature-banner.png')
+  .resize(500, 124, { fit: 'fill', kernel: 'lanczos3' })
+  .flatten({ background: '#1B2A8A' })
+  .jpeg({ quality: 88, mozjpeg: true, chromaSubsampling: '4:4:4' })
+  .toFile('public/aisc-signature-banner.jpg');
+```
+
+124 rather than 125 so the source is an exact 2x of the 62px display height, which
+avoids any client-side resampling mismatch. The 0.8% vertical difference against
+the master's 4:1 ratio is not perceptible.
+
+Always regenerate from `aisc-signature-banner.png`, never from the JPEG.
+
+At 250px the wordmark is small but legible. If it is ever reduced further, check
+readability at true display size rather than magnified, because a magnified
+preview flatters small type.
 
 ### Why the banner is a JPEG
 
@@ -109,26 +145,31 @@ unpredictably in Outlook and Apple Mail dark mode. Target under 120KB.
 
 ## Fonts
 
-The signature names PT Sans Narrow and Inter to match the site, but **most
-recipients will not see them.**
+The signature names Inter to match the site, but **most recipients will not see
+it.**
 
 Email clients cannot load web fonts. Gmail and Outlook strip `<link>` and
 font-face rules, and Outlook desktop's Word engine ignores them outright. The
 `.woff2` files in `src/fonts/` are for the website and have no bearing here. A
 font renders in email only if it is already installed on the recipient's machine.
 
-Naming them still costs nothing and rewards anyone who has them locally. Two
-stacks are used:
+Naming it still costs nothing and rewards anyone who has it locally. One stack is
+used throughout:
 
-| Role | Stack | Used for |
-|---|---|---|
-| Display | `'PT Sans Narrow', 'Arial Narrow', Arial, Helvetica, sans-serif` | The name |
-| Text | `Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif` | Everything else |
+```
+Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif
+```
 
-`Arial Narrow` is the important fallback: it ships with Windows and macOS, so the
-condensed look of the name survives for most recipients even without PT Sans
-Narrow. If it degrades all the way to Arial the name simply sets wider, which the
-410px column absorbs without wrapping.
+PT Sans Narrow is deliberately **not** used. An earlier draft set the name in it,
+which does match the site where `h1` and `h3` use ptsans, but a signature this
+small does not have room for two typefaces to read as intentional rather than
+accidental. Hierarchy comes from size, weight, letter spacing and colour instead.
+
+**Keep the fallbacks metrically similar to Inter.** A stack like
+`Inter, 'Arial Narrow', Arial` looks harmless but breaks badly: recipients with
+Inter get a normal-width name while recipients without it get a condensed one,
+and the rest of the signature falls back to normal-width Helvetica either way. The
+name would visibly disagree with the text beneath it on most machines.
 
 **Do not add a font-face rule to make the preview look right.** The preview page
 is what you copy from. If it rendered in fonts your recipients do not have, you

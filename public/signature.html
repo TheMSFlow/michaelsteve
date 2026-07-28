@@ -12,14 +12,18 @@
      EMAIL SIGNATURE. Select all on this page, copy, paste into
      your mail client's signature editor. Do not paste the source.
 
-     FONTS. Email cannot load web fonts, so PT Sans Narrow and Inter
-     render only for recipients who have them installed locally.
-     Everyone else gets the fallback stack, which is what this design
-     is tuned for. Do not add font-face rules; clients strip them and
-     the preview would stop telling the truth.
+     FONTS. Email cannot load web fonts, so Inter renders only for
+     recipients who have it installed locally. Everyone else gets the
+     fallback stack, which is what this design is tuned for. Do not add
+     font-face rules; clients strip them and the preview would stop
+     telling the truth.
 
-       Display : 'PT Sans Narrow', 'Arial Narrow', Arial, Helvetica, sans-serif
-       Text    : Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif
+       Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+     One stack throughout. Hierarchy comes from size, weight, letter
+     spacing and colour, not from a second typeface. Keep the fallbacks
+     metrically similar to Inter so the name does not jump width when
+     Inter is absent.
      ============================================================ -->
 
 <table border="0" cellpadding="0" cellspacing="0" width="500" style="border-collapse:collapse; width:500px; max-width:500px;">
@@ -36,7 +40,7 @@
           <td width="410" valign="top" style="width:410px; padding:0;">
             <table border="0" cellpadding="0" cellspacing="0" width="410" style="border-collapse:collapse; width:410px;">
               <tr>
-                <td style="padding:0 0 5px 0; font-family:'Inter', 'Arial Narrow', Arial, Helvetica, sans-serif; font-size:24px; line-height:27px; font-weight:bold; letter-spacing:0.2px; color:#00034C;">Michael Steve</td>
+                <td style="padding:0 0 5px 0; font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; line-height:27px; font-weight:bold; letter-spacing:0.2px; color:#00034C;">Michael Steve</td>
               </tr>
               <tr>
                 <td style="padding:0 0 7px 0; font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:11px; line-height:15px; font-weight:bold; letter-spacing:1.4px; color:#6368DA;">AI CLARITY CONSULTANT</td>
@@ -67,16 +71,18 @@
   </tr>
 
   <!-- ---------- CONTACT ----------
-       Two lines rather than four. The separator colour sits on the TD so
-       the dots read lighter than the links without needing a span. -->
+       One item per line, stacked as table rows rather than line breaks,
+       so spacing stays under cell-padding control in Outlook.
+       Social links were removed until those profiles carry content; add
+       them back as plain text links here, never as icon images. -->
   <tr>
     <td style="padding:0;">
       <table border="0" cellpadding="0" cellspacing="0" width="500" style="border-collapse:collapse; width:500px;">
         <tr>
-          <td style="padding:0 0 6px 0; font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#B9BBD0;"><a href="mailto:partner@michaelsteve.com" style="font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#010579; text-decoration:none;">partner@michaelsteve.com</a>&nbsp;&nbsp;&#183;&nbsp;&nbsp;<a href="tel:+2349160199000" style="font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#010579; text-decoration:none;">+234 916 019 9000</a></td>
+          <td style="padding:0 0 4px 0; font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#3F4157;"><a href="mailto:partner@michaelsteve.com" style="font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#010579; text-decoration:none;">partner@michaelsteve.com</a></td>
         </tr>
         <tr>
-          <td style="padding:0; font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#B9BBD0;"><a href="https://michaelsteve.com" target="_blank" style="font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; font-weight:bold; color:#010579; text-decoration:none;">michaelsteve.com</a>&nbsp;&nbsp;&#183;&nbsp;&nbsp;<a href="https://linkedin.com/in/themichaelsteve" target="_blank" style="font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#010579; text-decoration:none;">LinkedIn</a>&nbsp;&nbsp;&#183;&nbsp;&nbsp;<a href="https://instagram.com/themichaelsteve" target="_blank" style="font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#010579; text-decoration:none;">Instagram</a></td>
+          <td style="padding:0; font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#3F4157;"><a href="https://michaelsteve.com" target="_blank" style="font-family:Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px; line-height:19px; color:#010579; text-decoration:none;">michaelsteve.com</a></td>
         </tr>
       </table>
     </td>
@@ -92,7 +98,7 @@
        recipients already in a thread reply directly instead. -->
   <tr>
     <td style="padding:0;">
-      <a href="https://aistakeholderchallenge.com" target="_blank" style="text-decoration:none;"><img src="https://michaelsteve.com/aisc-signature-banner.jpg" width="500" height="125" alt="AI Stakeholder Challenge, a seven day AI leadership program" style="display:block; border:0; outline:none; text-decoration:none; width:500px; height:125px;"></a>
+      <a href="https://aistakeholderchallenge.com" target="_blank" style="text-decoration:none;"><img src="https://michaelsteve.com/aisc-signature-banner.jpg" width="250" height="62" alt="AI Stakeholder Challenge, a seven day AI leadership program" style="display:block; border:0; outline:none; text-decoration:none; width:250px; height:62px;"></a>
     </td>
   </tr>
 
