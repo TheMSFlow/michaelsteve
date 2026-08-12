@@ -64,10 +64,10 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Michael Steve",
               url: process.env.NEXT_PUBLIC_SITE_URL,
-              jobTitle: "AI Leadership Strategist",
+              jobTitle: "AI Clarity Consultant",
               worksFor: {
                 "@type": "Organization",
-                name: "Michael Steve",
+                name: "Michael Steve Clarity Studio",
               },
               description:
                 "Clarity Catalyst helping leaders navigate the AI shift through strategic insight and executive briefings.",

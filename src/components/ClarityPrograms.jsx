@@ -100,7 +100,7 @@ export default function ClarityPrograms({ onClose }) {
                   <Button
                     variant="primary-light"
                     className="w-fit gap-2"
-                    href="https://intelligence.michaelsteve.com/form/inquiry?src=PB"
+                    href="https://intelligence.michaelsteve.com/pay/vip"
                   >
                     Request Briefing
                   </Button>
@@ -137,10 +137,9 @@ export default function ClarityPrograms({ onClose }) {
               </div>
 
               <p className="text-sm text-dark-blue/80 leading-relaxed">
-                A seven-day leadership program that challenges leaders to
-                move from passive AI consumer to responsible AI stakeholder
-                through live sessions, decision-focused exercises, and
-                guided feedback.
+                A seven-day leadership program that challenges leaders to move
+                from passive AI consumer to responsible AI stakeholder through
+                live sessions, decision-focused exercises, and guided feedback.
               </p>
 
               <Button
