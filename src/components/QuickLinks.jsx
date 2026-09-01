@@ -60,7 +60,7 @@ const links = [
     id: "apprentice",
     badge: "Career Programme",
     headline: "AI Career Apprentice",
-    subline: "Get trained. Get credited. Get paid.",
+    subline: "Get trained. Get proof. Get seen.",
     persona:
       "You have the degree. What you need now is a launchpad, not another CV in a pile.",
     cta: "Apply Now",
