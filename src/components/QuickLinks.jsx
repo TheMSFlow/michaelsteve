@@ -64,7 +64,8 @@ const links = [
     persona:
       "You have the degree. What you need now is a launchpad, not another CV in a pile.",
     cta: "Apply Now",
-    url: `${BASE_URL}/form/opportunity/ai-apprentice`,
+    // The programme page, not the form: this link is for people deciding.
+    url: "https://aistakeholderchallenge.com/ai-apprentice",
     hero: false,
     tags: ["Graduates", "Job Seekers", "Career Pivoters"],
   },
