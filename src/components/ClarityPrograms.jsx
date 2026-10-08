@@ -137,9 +137,10 @@ export default function ClarityPrograms({ onClose }) {
               </div>
 
               <p className="text-sm text-dark-blue/80 leading-relaxed">
-                A seven-day leadership program that challenges leaders to move
-                from passive AI consumer to responsible AI stakeholder through
-                live sessions, decision-focused exercises, and guided feedback.
+                A seven-day, community-based leadership program designed for
+                leaders moving from passive AI consumer to responsible AI
+                stakeholder, focused on AI clarity, reclaimed leadership time,
+                value creation, and a six-month roadmap to act on it.
               </p>
 
               <Button

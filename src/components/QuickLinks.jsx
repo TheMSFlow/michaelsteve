@@ -241,7 +241,7 @@ export default function QuickLinks() {
             Michael Steve
           </h2>
           <p className="text-sm font-inter font-light text-dark-blue/60">
-            AI Clarity Consultant · Clarity in AI™
+            Clarity Catalyst Studio · Clarity in AI™
           </p>
         </header>
 

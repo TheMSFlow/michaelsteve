@@ -56,7 +56,10 @@ const programsJsonLd = {
         description:
           "Focused, high-trust AI briefings for curated groups of leaders, covering the strategic, governance, and ecosystem implications of AI.",
         url: "https://intelligence.michaelsteve.com",
-        provider: { "@type": "Person", name: "Michael Steve" },
+        provider: {
+          "@type": "Organization",
+          name: "Michael Steve Clarity Studio",
+        },
       },
     },
     {
@@ -66,9 +69,12 @@ const programsJsonLd = {
         "@type": "Service",
         name: "AI Stakeholder Challenge",
         description:
-          "A seven-day leadership program that moves leaders from passive AI consumer to responsible AI stakeholder.",
+          "A seven-day, community-based leadership program designed for leaders moving from passive AI consumer to responsible AI stakeholder, focused on AI clarity, reclaimed leadership time, value creation, and a six-month roadmap to act on it.",
         url: "https://aistakeholderchallenge.com",
-        provider: { "@type": "Person", name: "Michael Steve" },
+        provider: {
+          "@type": "Organization",
+          name: "Michael Steve Clarity Studio",
+        },
       },
     },
     {
@@ -80,7 +86,10 @@ const programsJsonLd = {
         description:
           "A four-week, one-on-one executive engagement for C-suite leaders focused on AI governance, risk oversight, and enterprise strategy.",
         url: "https://aiclarityforchiefs.com",
-        provider: { "@type": "Person", name: "Michael Steve" },
+        provider: {
+          "@type": "Organization",
+          name: "Michael Steve Clarity Studio",
+        },
       },
     },
   ],

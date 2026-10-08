@@ -61,17 +61,18 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Michael Steve",
+              "@type": "Organization",
+              name: "Michael Steve Clarity Studio",
+              alternateName: "Michael Steve",
               url: process.env.NEXT_PUBLIC_SITE_URL,
-              jobTitle: "AI Clarity Consultant",
-              worksFor: {
-                "@type": "Organization",
-                name: "Michael Steve Clarity Studio",
-              },
               description:
-                "Clarity Catalyst helping leaders navigate the AI shift through strategic insight and executive briefings.",
-              sameAs: ["https://linkedin.com/in/themichaelsteve"],
+                "A clarity catalyst studio for strategic, executive, and institutional leaders.",
+              founder: {
+                "@type": "Person",
+                name: "Michael Steve",
+                jobTitle: "AI Clarity Consultant",
+                sameAs: ["https://linkedin.com/in/themichaelsteve"],
+              },
             }),
           }}
         />
