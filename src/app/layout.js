@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import { inter, ptsans } from "@/fonts";
-import { LocationProvider } from "@/context/LocationContext";
 import { Toaster } from "sonner";
 import GoogleAnalytics from "./GoogleAnalytics";
 
@@ -80,11 +79,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${ptsans.variable} antialiased min-h-dvh ms-scrollbar`}
       >
-        <LocationProvider>
-          <GoogleAnalytics />
-          {children}
-          <Toaster richColors />
-        </LocationProvider>
+        <GoogleAnalytics />
+        {children}
+        <Toaster richColors />
       </body>
     </html>
   );

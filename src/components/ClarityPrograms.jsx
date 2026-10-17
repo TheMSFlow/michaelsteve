@@ -166,9 +166,10 @@ export default function ClarityPrograms({ onClose }) {
               </div>
 
               <p className="text-sm text-dark-blue/80 leading-relaxed">
-                A four-week, one-on-one executive engagement designed for
-                C-suite and senior leaders, focused on AI governance, risk
-                oversight, leadership alignment, and enterprise-grade strategy.
+                A four-week, one-on-one engagement for leaders whose position
+                carries weight: executives, public figures, faith and
+                institutional leaders. Eight private sessions on AI governance,
+                risk oversight, leadership alignment and value strategy.
               </p>
 
               <Button

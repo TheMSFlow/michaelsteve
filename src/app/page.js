@@ -84,7 +84,7 @@ const programsJsonLd = {
         "@type": "Service",
         name: "AI Clarity for Chiefs",
         description:
-          "A four-week, one-on-one executive engagement for C-suite leaders focused on AI governance, risk oversight, and enterprise strategy.",
+          "A four-week, one-on-one engagement for leaders whose position carries weight: executives, public figures, faith and institutional leaders. Eight private sessions on AI governance, risk oversight, leadership alignment and value strategy.",
         url: "https://aiclarityforchiefs.com",
         provider: {
           "@type": "Organization",
